@@ -2,16 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class HttpManager : MonoBehaviour
 {
 
+
+    public Text[] userName;
+    public Text[] scores;
+    public GameObject Panel;
     [SerializeField]
     private string URL;
     // Start is called before the first frame update
     void Start()
     {
-        
+      
     }
 
     public void ClickGetScores()
@@ -37,6 +42,11 @@ public class HttpManager : MonoBehaviour
             foreach (ScoreData score in resData.scores)
             {
                 Debug.Log(score.userId +" | "+score.value);
+                userName[score.userId-1].text = score.userId.ToString();
+            }
+            for (int i = 0; i < resData.scores.Length; i++)
+            {
+                scores[i].text = "Score: "+ resData.scores[i].value.ToString();
             }
         }
         else
