@@ -1557,7 +1557,7 @@ MonoBehaviour:
   - {fileID: 1029914010}
   - {fileID: 94247113}
   Panel: {fileID: 1827557940}
-  URL: https://my-json-server.typicode.com/manolovillarreal/FakeApi
+  URL: https://my-json-server.typicode.com/AlonsoMejiaA/api-flasa
 --- !u!1 &1525561764
 GameObject:
   m_ObjectHideFlags: 0
@@ -2320,7 +2320,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.655899, y: 24.487305}
+  m_AnchoredPosition: {x: -1.6558838, y: 24.487305}
   m_SizeDelta: {x: -37.5334, y: -156.7573}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1827557942
